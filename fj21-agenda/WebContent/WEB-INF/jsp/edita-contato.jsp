@@ -21,18 +21,23 @@ input {
 </style>
 </head>
 <body>
-	<c:import url="WEB-INF/jsp/cabecalho.jsp"></c:import>
+	<c:import url="cabecalho.jsp"></c:import>
 	<div align="center">
 		<form action="mvc" method="post" >
 			<input type="hidden" name="logica" value="AdicionaContatoLogic" />
-			<wimmer:campoTexto label="Nome" id="nome"></wimmer:campoTexto><br />
-			<wimmer:campoTexto label="Email" id="email"></wimmer:campoTexto><br />
-			<wimmer:campoTexto label="Endereco" id="endereco"></wimmer:campoTexto><br />
-			Data Nascimento <wimmer:campoData id="dataNascimento" /><br />
+			<label for=id>Id </label>
+			<input type="text" id=id name=id value="${contato.id}" /><br />
+			<label for=nome>Nome </label>
+			<input type="text" id=nome name=nome value="${contato.name}" /><br />
+			<label for=email>Email </label>
+			<input type="text" id=email name=email value="${contato.email}" /><br />
+			<label for=endereco>Endereco </label>
+			<input type="text" id=endereco name=endereco value="${contato.endereco}" /><br />
+			Data Nascimento <wimmer:campoDataEditar id="dataNascimento" /><br />
 			
 			<input type="submit" value="Gravar" />
 	    </form>
     </div>
-    <c:import url="WEB-INF/jsp/rodape.jsp"></c:import>
+    <c:import url="rodape.jsp"></c:import>
 </body>
 </html>

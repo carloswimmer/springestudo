@@ -8,7 +8,7 @@
 <title>JSP</title>
 </head>
 <body>
-	<c:import url="/cabecalho.jsp"></c:import>
+	<c:import url="/WEB-INF/jsp/cabecalho.jsp"></c:import>
 		<div align="center">
 		<%-- comentario em JSP aqui: nossa primeira pagina em JSP --%>
 		<%
@@ -21,11 +21,12 @@
 		%>
 		<%= autor %>
 			<div  style="padding: 10px">
-				<form action="/fj21-agenda/lista-contatos.jsp">
+				<form action="/fj21-agenda/mvc">
+					<input type="hidden" name=logica value=ListaContatosLogic >
 					<input type="submit" value="Lista Contatos" />
 				</form>
 			</div>
 		</div>
-	<c:import url="/rodape.jsp"></c:import>
+	<c:import url="/WEB-INF/jsp/rodape.jsp"></c:import>
 </body>
 </html>

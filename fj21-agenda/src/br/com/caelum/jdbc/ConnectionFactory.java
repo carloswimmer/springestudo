@@ -10,7 +10,7 @@ public class ConnectionFactory {
 	public Connection getConnection() {
 		try {
 			DriverManager.registerDriver(new Driver());
-			return DriverManager.getConnection("jdbc:mysql://localhost/fj21", "root", "TuiE,AOQ,58t");
+			return DriverManager.getConnection("jdbc:mysql://localhost/fj21", "root", "j7B93@vpf%kG");
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
 		}

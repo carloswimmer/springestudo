@@ -11,7 +11,8 @@
 <c:import url="cabecalho.jsp"></c:import>
 	<div align="center">
 		Contato ${param.nome} adicionado com sucesso...<br />
-		<form action="/fj21-agenda/lista-contatos.jsp">
+		<form action="/fj21-agenda/mvc">
+			<input type="hidden" name="logica" value="ListaContatosLogic">
 			<input type="submit" value="Lista Contatos">
 		</form>
 	</div>
