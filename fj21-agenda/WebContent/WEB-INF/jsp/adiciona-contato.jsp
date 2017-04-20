@@ -21,10 +21,11 @@ input {
 </style>
 </head>
 <body>
-	<c:import url="WEB-INF/jsp/cabecalho.jsp"></c:import>
+	<c:import url="cabecalho.jsp"></c:import>
 	<div align="center">
 		<form action="mvc" method="post" >
 			<input type="hidden" name="logica" value="AdicionaContatoLogic" />
+			<input type="hidden" name="id" value="" />
 			<wimmer:campoTexto label="Nome" id="nome"></wimmer:campoTexto><br />
 			<wimmer:campoTexto label="Email" id="email"></wimmer:campoTexto><br />
 			<wimmer:campoTexto label="Endereco" id="endereco"></wimmer:campoTexto><br />
@@ -33,6 +34,6 @@ input {
 			<input type="submit" value="Gravar" />
 	    </form>
     </div>
-    <c:import url="WEB-INF/jsp/rodape.jsp"></c:import>
+    <c:import url="rodape.jsp"></c:import>
 </body>
 </html>

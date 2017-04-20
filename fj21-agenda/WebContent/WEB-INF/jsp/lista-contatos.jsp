@@ -76,7 +76,7 @@ tfoot {
 		<tfoot>
 			<tr>
 				<td colspan="6" style="padding: 15px">
-					<form action="adiciona-contato.jsp">
+					<form action="novoContato">
 						<input type="submit" value="Novo Contato" />
 					</form>
 				</td>

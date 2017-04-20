@@ -1,5 +1,6 @@
 package br.com.caelum.logica;
 
+import java.sql.Connection;
 import java.text.SimpleDateFormat;
 
 import javax.servlet.http.HttpServletRequest;
@@ -14,8 +15,8 @@ public class EditaContatoLogic implements Logica {
 	public String executa(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
 		long id = Long.parseLong(request.getParameter("id"));
-		
-		ContatoDao dao = new ContatoDao();
+		Connection cf = (Connection) request.getAttribute("connection");
+		ContatoDao dao = new ContatoDao(cf);
 		Contato contato = new Contato();
 		
 		contato = dao.pesquisaId(id);

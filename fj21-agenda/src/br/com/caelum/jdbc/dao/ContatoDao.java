@@ -19,6 +19,10 @@ public class ContatoDao {
 	public ContatoDao() {
 		this.con = new ConnectionFactory().getConnection();
 	}
+	
+	public ContatoDao(Connection connection) {
+		this.con = connection;
+	}
 
 	public void adiciona(Contato contato) throws SQLException {
 		String sql = "INSERT INTO contatos" + " (nome, email, endereco, dataNascimento)" + " VALUES(?, ?, ?, ?)";
