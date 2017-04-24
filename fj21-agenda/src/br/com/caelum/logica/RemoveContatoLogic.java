@@ -23,7 +23,7 @@ public class RemoveContatoLogic implements Logica {
 		ContatoDao dao = new ContatoDao(cf);
 		dao.remove(contato);
 		
-		return "mvc?logica=ListaContatosLogic";
+		return "/WEB-INF/jsp/lista-contatos.jsp";
 	}
 
 }
