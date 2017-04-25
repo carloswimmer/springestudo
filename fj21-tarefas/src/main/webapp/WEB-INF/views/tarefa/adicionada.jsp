@@ -9,5 +9,6 @@
 </head>
 <body>
 	<fmt:message key="tarefa.adicionada.com.sucesso"></fmt:message>
+	<h4><a href="listaTarefas">Home</a></h4>
 </body>
 </html>
